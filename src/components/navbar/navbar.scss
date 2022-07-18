@@ -1,0 +1,14 @@
+@import "../../variables";
+
+ul {
+    display: flex;
+    gap: 2em;
+    font-size: 2rem;
+    font-weight: 600;
+
+    li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+}
