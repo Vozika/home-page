@@ -1,9 +1,10 @@
 import React from 'react'
 import "./top.scss"
+import 'animate.css';
 
 const Top = () => {
   return (
-    <div className='top__grid'>
+    <div className=' animate__animated animate__bounceInDown top__grid'>
         <div className='top__grid-item'></div>
         <div className='top__grid-item--center'>
         

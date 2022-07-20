@@ -3,10 +3,11 @@
 .design__grid {
     display: grid;
     grid-template-columns: 162px repeat(4, 1fr) 162px;
-    grid-template-rows: 162px repeat(2, 1fr);
+    grid-template-rows: 162px repeat(2, 1fr) 162px;
     grid-column-gap: 32px;
     grid-row-gap: 32px;
-    background-color: $primary-color;
+    // background-color: $primary-color;
+    background-image: linear-gradient(180deg, $primary-color 0%, #8fd3f4 100%);
 
     &-item {
 
@@ -33,6 +34,31 @@
             
         }
 
+        &--left-bottom-corner {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            
+        }
+
+        &--top {
+            
+            grid-column-start: 2;
+            grid-column-end: 6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                color: $light-color;
+                position: relative;
+                top: 10px;
+            }
+
+            a:hover {
+                color: $dark-color;
+            }
+        }
+
 
     }
 
@@ -46,6 +72,18 @@
     }
 
     &--right-top-corner {
+        transform: rotate(90deg);
+        width: 36px;
+        
+    }
+
+    &--left-bottom-corner {
+        transform: rotate(-90deg);
+        width: 36px;
+    }
+
+    &--right-bottom-corner {
+        transform: rotate(-180deg);
         width: 36px;
     }
 }
