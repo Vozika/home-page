@@ -2,5 +2,12 @@
 
 .logo {
     height: 252px;
-   
+  
 }
+
+@media only screen and (max-width: 2500px) {
+    .logo {
+        height: 126px;
+      
+    }
+  }

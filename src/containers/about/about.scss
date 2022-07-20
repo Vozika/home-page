@@ -1,0 +1,41 @@
+@import "../../variables";
+
+.about__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 126px 1fr 126px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: $accent-color;
+    padding: 126px 0;
+
+    & h1 {
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    & h2 {
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    & p {
+        font-size: 2rem;
+    }
+
+    &-item--center {
+        display: flex;
+
+    }
+
+    }
+
+    .budka {
+        width: 600px;
+        height: 600px;
+        border: 12px solid $light-color;
+        margin-left: 126px;
+    }

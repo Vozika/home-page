@@ -1,9 +1,9 @@
 @import "../../variables";
 
-.grid {
+.header__grid {
     display: grid;
     grid-template-columns: 126px 1fr 126px;
-    grid-template-rows: 126px 1fr;
+    grid-template-rows: 126px 1fr 126px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
