@@ -36,8 +36,10 @@
     }
 
     .budka {
-        width: 600px;
-        height: 600px;
+        width: 40em;
+        height: 40em;
+        // aspect-ratio: 1 / 1;
         border: 12px solid $light-color;
         margin-left: 126px;
+        
     }

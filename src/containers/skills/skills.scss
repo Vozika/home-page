@@ -1,0 +1,13 @@
+@import "../../variables";
+
+.skills {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $light-color;
+    gap: 3em;
+    padding: 126px 0;
+
+   
+}
