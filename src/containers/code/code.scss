@@ -3,6 +3,8 @@
 
 
 .code__grid {
+    width: 100%;
+    
     display: grid;
     grid-template-columns: 162px repeat(4, 1fr) 162px;
     grid-template-rows: 162px repeat(2, 1fr) 162px;
@@ -25,21 +27,22 @@
 
         &--container {
             background-color: $light-color;
-            aspect-ratio: 1 / 1;
+            // aspect-ratio: 1 / 1;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             border: $dark-color 12px solid;
             padding: 2.5em;
+            font-size: 0.75vw;
 
             p {
-                font-size: 2rem;
+                
                 text-align: center;
             }
 
             h1 {
-                font-size: 4rem;
+                
                 text-align: center;
                 margin-bottom: 0;
             }

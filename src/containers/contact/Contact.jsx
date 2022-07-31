@@ -40,7 +40,7 @@ const Contact = () => {
           Жду с нетерпением.
         </p>
 
-        <h1>metasoma@yandex.ru</h1><br /><br /><br />
+        <h1>metasoma@yandex.ru</h1><br /><br />
         <a href="#"><GrLinkTop size={64}/></a>
       </div>
       <div className="contact__grid-item"></div>

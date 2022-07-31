@@ -3,7 +3,7 @@
 ul {
     display: flex;
     gap: 1.2em;
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
     font-weight: 600;
 
     li {
@@ -14,7 +14,7 @@ ul {
 }
 
 .navbar__link {
-    color: $dark-color;
+    color: $neutral-color;
     position: relative;
     text-decoration: none;
 

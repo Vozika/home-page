@@ -11,21 +11,21 @@
     padding: 126px 0;
 
     & h1 {
-        font-size: 4rem;
+        // font-size: 4rem;
         margin: 0;
         padding: 0;
         opacity: 70%;
     }
 
     & h2 {
-        font-size: 2.5rem;
+        // font-size: 2.5rem;
         margin: 0;
         padding: 0;
         font-weight: 600;
     }
 
     & p {
-        font-size: 2rem;
+        // font-size: 2rem;
     }
 
     &-item--center {
@@ -36,9 +36,9 @@
     }
 
     .budka {
-        width: 40em;
-        height: 40em;
-        // aspect-ratio: 1 / 1;
+        width: 20em;
+        height: 20em;
+        aspect-ratio: 1 / 1;
         border: 12px solid $light-color;
         margin-left: 126px;
         
