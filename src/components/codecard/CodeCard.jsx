@@ -40,9 +40,9 @@ const CodeCard = (props) => {
           <h1>{props.title}</h1>
           <p>{props.text}</p>
           
-          <div className='code__grid-item-link'><VscMultipleWindows size={34} color="#3777bc"/> <a href="#">Посмотреть вживую</a></div><br />
+          <div className='code__grid-item-link'><VscMultipleWindows size={34} color="#3777bc"/> <a href={props.link} target="_blank">Посмотреть вживую</a></div><br />
           
-          <div className='code__grid-item-link'><VscGithub size={34} color="#3777bc"/> <a href={props.github}>Код на Гитхабе</a></div> 
+          <div className='code__grid-item-link'><VscGithub size={34} color="#3777bc"/> <a href={props.github} target="_blank">Код на Гитхабе</a></div> 
           
           
     </motion.div>

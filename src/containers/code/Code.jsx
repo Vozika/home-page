@@ -9,13 +9,15 @@ import { GiTakeMyMoney } from 'react-icons/gi';
 import { RiPsychotherapyFill } from 'react-icons/ri';
 import { MdBathroom } from 'react-icons/md';
 import { MdOutlineBathtub } from 'react-icons/md';
+import { FaHome } from 'react-icons/fa';
+import { GiGearHammer } from 'react-icons/gi';
 
 
 
 const CODE_DATA = [
   {
     id: 0,
-    icon: <GiModernCity size={128} />,
+    icon: <GiModernCity size={96} />,
     title: "Capital Quiz App",
     text: "Небольшое приложение, позволяющее играть в «столицы». Сделано с применением Material UI.",
     link: "./capital-quiz",
@@ -23,7 +25,7 @@ const CODE_DATA = [
   },
   {
     id: 1,
-    icon: <GiWisdom size={128} />,
+    icon: <GiWisdom size={96} />,
     title: "Wisdom Generator",
     text: "Умные англоязычные мысли и рэндомные картинки из Интернета по API. Дзен-созерцание на любителя.",
     link: "./wisdom",
@@ -31,7 +33,7 @@ const CODE_DATA = [
   },
   {
     id: 2,
-    icon: <GiTakeMyMoney size={128} />,
+    icon: <GiTakeMyMoney size={96} />,
     title: "Next Invest",
     text: "Landing page, нарезанная из фигмовского макета. Адаптивная кросс-браузерная вёрстка.",
     link: "./next",
@@ -39,7 +41,7 @@ const CODE_DATA = [
   },
   {
     id: 3,
-    icon: <RiPsychotherapyFill size={128} />,
+    icon: <RiPsychotherapyFill size={96} />,
     title: "Meme Generator",
     text: "Традиционный проект в портфолио каждого начинающего разработчика. Классика жанра.",
     link: "./meme",
@@ -47,7 +49,7 @@ const CODE_DATA = [
   },
   {
     id: 4,
-    icon: <MdBathroom size={128} />,
+    icon: <MdBathroom size={96} />,
     title: "Сантонит",
     text: "Сделанный в 2005-м году сайт на чистых HTML и CSS. Древняя историческая реликвия.",
     link: "./santonit",
@@ -55,7 +57,7 @@ const CODE_DATA = [
   },
   {
     id: 5,
-    icon: <MdOutlineBathtub size={128} />,
+    icon: <MdOutlineBathtub size={96} />,
     title: "Duschy",
     text: "А это вообще 2003-й год. И снова HTML и CSS. Ещё более древняя историческая реликвия.",
     link: "./duschy",
@@ -63,17 +65,17 @@ const CODE_DATA = [
   },
   {
     id: 6,
-    icon: <GiModernCity size={128} />,
-    title: "",
-    text: "",
+    icon: <FaHome size={96} />,
+    title: "Home Sweet Home",
+    text: "Собственно, вот эта самая страница, на которой вы сейчас находитесь. Тоже ведь часть портфолио.",
     link: "#",
     github: "#",
   },
   {
     id: 7,
-    icon: <GiModernCity size={128} />,
-    title: "",
-    text: "",
+    icon: <GiGearHammer size={96} />,
+    title: "Coming Soon",
+    text: "Для будущего проекта. Пока его нет, но обязательно будет. Обязательно.",
     link: "#",
     github: "#",
   },
@@ -101,7 +103,7 @@ const Code = () => {
         {
           CODE_DATA.slice(0, 4).map((data) => {
             return (
-              <CodeCard key={data.id} icon={data.icon} title={data.title} text={data.text} github={data.github} />
+              <CodeCard key={data.id} icon={data.icon} title={data.title} text={data.text} link={data.link} github={data.github} />
             )
           })
         }
@@ -113,7 +115,7 @@ const Code = () => {
         {
           CODE_DATA.slice(-4).map((data) => {
             return (
-              <CodeCard key={data.id} icon={data.icon} title={data.title} text={data.text} github={data.github} />
+              <CodeCard key={data.id} icon={data.icon} title={data.title} text={data.text} link={data.link} github={data.github} />
             )
           })
         }
