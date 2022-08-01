@@ -29,6 +29,7 @@ const Contact = () => {
       animate={control}
       variants={boxVariant}
       initial="hidden"
+      transition={{ ease: "easeOut", duration: 1 }}
       className="contact__grid"
       id="contact"
     >
@@ -36,11 +37,14 @@ const Contact = () => {
       <div className="contact__grid-item--center">
         <p>
           Если вы хотите предложить мне работу, напишите письмо.
-          <br />
-          Жду с нетерпением.
+          
         </p>
 
-        <h1>metasoma@yandex.ru</h1><br /><br />
+        <motion.h1
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 2.5 }}
+        >metasoma@yandex.ru</motion.h1><br /><br />
         <a href="#"><GrLinkTop size={64}/></a>
       </div>
       <div className="contact__grid-item"></div>

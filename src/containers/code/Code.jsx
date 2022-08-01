@@ -10,13 +10,15 @@ import { RiPsychotherapyFill } from 'react-icons/ri';
 import { MdBathroom } from 'react-icons/md';
 import { MdOutlineBathtub } from 'react-icons/md';
 
+
+
 const CODE_DATA = [
   {
     id: 0,
     icon: <GiModernCity size={128} />,
     title: "Capital Quiz App",
     text: "Небольшое приложение, позволяющее играть в «столицы». Сделано с применением Material UI.",
-    link: "#",
+    link: "./capital-quiz",
     github: "https://github.com/vozika/quiz-app",
   },
   {
@@ -24,7 +26,7 @@ const CODE_DATA = [
     icon: <GiWisdom size={128} />,
     title: "Wisdom Generator",
     text: "Умные англоязычные мысли и рэндомные картинки из Интернета по API. Дзен-созерцание на любителя.",
-    link: "#",
+    link: "./wisdom",
     github: "https://github.com/vozika/quiz-app",
   },
   {
@@ -32,7 +34,7 @@ const CODE_DATA = [
     icon: <GiTakeMyMoney size={128} />,
     title: "Next Invest",
     text: "Landing page, нарезанная из фигмовского макета. Адаптивная кросс-браузерная вёрстка.",
-    link: "#",
+    link: "./next",
     github: "https://github.com/vozika/quiz-app",
   },
   {
@@ -40,7 +42,7 @@ const CODE_DATA = [
     icon: <RiPsychotherapyFill size={128} />,
     title: "Meme Generator",
     text: "Традиционный проект в портфолио каждого начинающего разработчика. Классика жанра.",
-    link: "#",
+    link: "./meme",
     github: "https://github.com/vozika/quiz-app",
   },
   {
@@ -48,7 +50,7 @@ const CODE_DATA = [
     icon: <MdBathroom size={128} />,
     title: "Сантонит",
     text: "Сделанный в 2005-м году сайт на чистых HTML и CSS. Древняя историческая реликвия.",
-    link: "#",
+    link: "./santonit",
     github: "https://github.com/vozika/quiz-app",
   },
   {
@@ -56,7 +58,7 @@ const CODE_DATA = [
     icon: <MdOutlineBathtub size={128} />,
     title: "Duschy",
     text: "А это вообще 2003-й год. И снова HTML и CSS. Ещё более древняя историческая реликвия.",
-    link: "#",
+    link: "./duschy",
     github: "https://github.com/vozika/quiz-app",
   },
   {
@@ -78,7 +80,8 @@ const CODE_DATA = [
 ]
 
 const Code = () => {
-  return (
+
+    return (
     <div className='code__grid' id="code">
 
 <div className='code__grid-item--left-top-corner'><img src={LeftTopCorner} className="code__image--left-top-corner" alt=""/></div>
@@ -103,11 +106,7 @@ const Code = () => {
           })
         }
 
-        {/* <CodeCard icon={CODE_DATA[0].icon} title={CODE_DATA[0].title} text={CODE_DATA[0].text} github={CODE_DATA[0].github} /> */}
-
-        {/* <div className='code__grid-item--container'></div>
-        <div className='code__grid-item--container'></div>
-        <div className='code__grid-item--container'></div> */}
+      
         <div className='code__grid-item'></div>
 
         <div className='code__grid-item'></div>
