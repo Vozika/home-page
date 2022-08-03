@@ -21,7 +21,7 @@ const CODE_DATA = [
     title: "Capital Quiz App",
     text: "Небольшое приложение, позволяющее играть в «столицы». Сделано с применением Material UI.",
     link: "./capital-quiz",
-    github: "https://github.com/vozika/quiz-app",
+    github: "https://github.com/Vozika/quiz-app",
   },
   {
     id: 1,
@@ -37,7 +37,7 @@ const CODE_DATA = [
     title: "Next Invest",
     text: "Landing page, нарезанная из фигмовского макета. Адаптивная кросс-браузерная вёрстка.",
     link: "./next",
-    github: "https://github.com/vozika/quiz-app",
+    github: "https://github.com/Vozika/next-invest-landing-page",
   },
   {
     id: 3,
@@ -53,7 +53,7 @@ const CODE_DATA = [
     title: "Сантонит",
     text: "Сделанный в 2005-м году сайт на чистых HTML и CSS. Древняя историческая реликвия.",
     link: "./santonit",
-    github: "https://github.com/vozika/quiz-app",
+    github: "https://github.com/Vozika/santonit",
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ const CODE_DATA = [
     title: "Duschy",
     text: "А это вообще 2003-й год. И снова HTML и CSS. Ещё более древняя историческая реликвия.",
     link: "./duschy",
-    github: "https://github.com/vozika/quiz-app",
+    github: "https://github.com/Vozika/duschy",
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ const CODE_DATA = [
     title: "Home Sweet Home",
     text: "Собственно, вот эта самая страница, на которой вы сейчас находитесь. Тоже ведь часть портфолио.",
     link: "#",
-    github: "#",
+    github: "https://github.com/Vozika/home-page",
   },
   {
     id: 7,
