@@ -33,11 +33,14 @@ const Apparel = () => {
     if (i < 5) {
       squares01.push(
         <motion.div
-          ref={ref}
-          animate={control}
-          variants={boxVariant}
+          // ref={ref}
+          // animate={control}
+          // variants={boxVariant}
+          // transition={{ ease: "easeOut", duration: 1 }}
+          // initial="hidden"
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{ ease: "easeOut", duration: 1 }}
-          initial="hidden"
           className="apparel__grid-item--container"
         >
           <img
@@ -50,11 +53,14 @@ const Apparel = () => {
     } else {
       squares02.push(
         <motion.div
-          ref={ref}
-          animate={control}
-          variants={boxVariant}
+          // ref={ref}
+          // animate={control}
+          // variants={boxVariant}
+          // transition={{ ease: "easeOut", duration: 1 }}
+          // initial="hidden"
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{ ease: "easeOut", duration: 1 }}
-          initial="hidden"
           className="apparel__grid-item--container"
         >
           <img
@@ -69,14 +75,7 @@ const Apparel = () => {
 
   return (
     <div id="apparel">
-      <div
-        // ref={ref}
-        // animate={control}
-        // variants={boxVariant}
-        // transition={{ ease: "easeOut", duration: 0.5 }}
-        // initial="hidden"
-        className="apparel__grid"
-      >
+      <div className="apparel__grid">
         <div className="apparel__grid-item--left-top-corner">
           <img
             src={LeftTopCorner}
@@ -85,14 +84,6 @@ const Apparel = () => {
           />
         </div>
         <div className="apparel__grid-item--top">
-          {/* <ul>
-          <li onClick={() => setImageDir("logo")} className={imageDir === "logo" ? "apparel__grid-navbar--active" : "apparel__grid-navbar"}>Лого</li>
-          <li onClick={() => setImageDir("id")} className={imageDir === "id" ? "apparel__grid-navbar--active" : "apparel__grid-navbar"}>Фирстиль</li>
-          <li onClick={() => setImageDir("poly")} className={imageDir === "poly" ? "apparel__grid-navbar--active" : "apparel__grid-navbar"}>Полиграфия</li>
-          <li onClick={() => setImageDir("pack")} className={imageDir === "pack" ? "apparel__grid-navbar--active" : "apparel__grid-navbar"}>Упаковка</li>
-          <li onClick={() => setImageDir("photo")} className={imageDir === "photo" ? "apparel__grid-navbar--active" : "apparel__grid-navbar"}>Фотография</li>
-        </ul> */}
-
           <motion.p
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -125,10 +116,10 @@ const Apparel = () => {
             alt=""
           />
         </div>
-        <div className="apparel__grid-item"></div>
-        <div className="apparel__grid-item"></div>
-        <div className="apparel__grid-item"></div>
-        <div className="apparel__grid-item"></div>
+        <div className="apparel__grid-item--bottom"></div>
+        <div className="apparel__grid-item--bottom"></div>
+        <div className="apparel__grid-item--bottom"></div>
+        <div className="apparel__grid-item--bottom"></div>
         <div className="apparel__grid-item">
           <img
             src={LeftTopCorner}

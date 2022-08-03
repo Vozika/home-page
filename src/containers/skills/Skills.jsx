@@ -5,7 +5,7 @@ import { IconContext } from "react-icons";
 const Skills = (props) => {
   return (
     <div className="skills">
-      <IconContext.Provider value={{ color: "gray", size: 96 }}>
+      <IconContext.Provider value={{ color: "gray", size: 74 }}>
         {props.icon001}
         {props.icon002}
         {props.icon003}

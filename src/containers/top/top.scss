@@ -10,7 +10,7 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin-bottom: 126px;
-  
+
 
   h1 {
     font-size: 3.8vw;
@@ -36,13 +36,13 @@
     background-position: 0 88%;
     transition: background-size 0.25s ease-in, padding 0.25s ease-out;
     // transition: padding 0.25s ease-in;
-    
+
 
     &:hover {
       background-size: 100% 75%;
       padding: 0 6px;
       color: $light-color;
-      
+
 
     }
 
@@ -119,4 +119,44 @@
     color: $primary-color;
     letter-spacing: 2rem;
   }
+}
+
+@media only screen and (max-width: 1400px) {
+
+  .top__grid {
+    
+    display: flex;
+    flex-direction: column;
+
+    a {
+      background-size: 100% 6px;
+    }
+
+    &-item {
+      display: none;
+    }
+
+    &-item--center {
+
+      h1 {
+        font-size: 1rem;
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+
+      }
+
+      a {
+        font-size: 1.3rem;
+      }
+
+    }
+
+  }
+
+
+
+
+
+
+
 }

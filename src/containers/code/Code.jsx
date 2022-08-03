@@ -93,9 +93,7 @@ const Code = () => {
 
 
 </div>
-{/* <div className='code__grid-item'></div>
-<div className='code__grid-item'></div>
-<div className='code__grid-item'></div> */}
+
 <div className='code__grid-item--right-top-corner'><img src={LeftTopCorner} className="code__image--right-top-corner" alt=""/></div>
 
         <div className='code__grid-item'></div>

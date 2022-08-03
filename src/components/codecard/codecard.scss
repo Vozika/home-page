@@ -1,1 +1,7 @@
 @import "../../variables";
+
+@media only screen and (max-width: 1400px) {
+    .code__grid-item--container {
+        width: 80%;
+    }
+}

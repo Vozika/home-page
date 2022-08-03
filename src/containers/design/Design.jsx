@@ -32,11 +32,14 @@ const Design = () => {
     if (i < 5) {
       squares01.push(
         <motion.div
-        ref={ref}
-          animate={control}
-          variants={boxVariant}
-          transition={{ ease: "easeOut", duration: 1 }}
-          initial="hidden"
+        // ref={ref}
+        //   animate={control}
+        //   variants={boxVariant}
+        //   transition={{ ease: "easeOut", duration: 1 }}
+        //   initial="hidden"
+        initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ ease: "easeOut", duration: 1 }}
         className="design__grid-item--container">
           <img
             src={"./images/" + imageDir + "/000" + i + ".jpg"}
@@ -48,11 +51,14 @@ const Design = () => {
     } else {
       squares02.push(
         <motion.div
-        ref={ref}
-          animate={control}
-          variants={boxVariant}
-          transition={{ ease: "easeOut", duration: 1 }}
-          initial="hidden"
+        // ref={ref}
+        //   animate={control}
+        //   variants={boxVariant}
+        //   transition={{ ease: "easeOut", duration: 1 }}
+        //   initial="hidden"
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ ease: "easeOut", duration: 1 }}
         className="design__grid-item--container">
           <img
             src={"./images/" + imageDir + "/000" + i + ".jpg"}
@@ -79,11 +85,10 @@ const Design = () => {
       transition={{ ease: "easeOut", duration: 1.5 }}
       className="design__grid-item--top">
         <ul>
-          <li onClick={() => setImageDir("logo")} className={imageDir === "logo" ? "design__grid-navbar--active" : "design__grid-navbar"}>Лого</li>
-          {/* <li onClick={() => setImageDir("id")} className={imageDir === "id" ? "design__grid-navbar--active" : "design__grid-navbar"}>Фирстиль</li> */}
-          <li onClick={() => setImageDir("poly")} className={imageDir === "poly" ? "design__grid-navbar--active" : "design__grid-navbar"}>Полиграфия</li>
-          <li onClick={() => setImageDir("pack")} className={imageDir === "pack" ? "design__grid-navbar--active" : "design__grid-navbar"}>Упаковка</li>
-          <li onClick={() => setImageDir("photo")} className={imageDir === "photo" ? "design__grid-navbar--active" : "design__grid-navbar"}>Фотография</li>
+          <li onClick={() => setImageDir("logo")} className={imageDir === "logo" ? "design__grid-bar--active" : "design__grid-bar"}>Лого</li>
+          <li onClick={() => setImageDir("poly")} className={imageDir === "poly" ? "design__grid-bar--active" : "design__grid-bar"}>Полиграфия</li>
+          <li onClick={() => setImageDir("pack")} className={imageDir === "pack" ? "design__grid-bar--active" : "design__grid-bar"}>Упаковка</li>
+          <li onClick={() => setImageDir("photo")} className={imageDir === "photo" ? "design__grid-bar--active" : "design__grid-bar"}>Фотография</li>
         </ul>
       </motion.div>
 
