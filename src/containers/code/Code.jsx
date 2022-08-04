@@ -29,7 +29,7 @@ const CODE_DATA = [
     title: "Wisdom Generator",
     text: "Умные англоязычные мысли и рэндомные картинки из Интернета по API. Дзен-созерцание на любителя.",
     link: "./wisdom",
-    github: "https://github.com/vozika/quiz-app",
+    github: "https://github.com/Vozika/random-quote-app",
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ const CODE_DATA = [
     title: "Meme Generator",
     text: "Традиционный проект в портфолио каждого начинающего разработчика. Классика жанра.",
     link: "./meme",
-    github: "https://github.com/vozika/quiz-app",
+    github: "https://github.com/Vozika/meme-app",
   },
   {
     id: 4,
@@ -75,9 +75,9 @@ const CODE_DATA = [
     id: 7,
     icon: <GiGearHammer size={96} />,
     title: "Coming Soon",
-    text: "Для будущего проекта. Пока его нет, но обязательно будет. Обязательно.",
-    link: "#",
-    github: "#",
+    text: "Для будущего проекта. Пока его нет, но обязательно будет. А пока ещё раз посмотрите на уже сделанное.",
+    link: "#code",
+    github: "https://github.com/Vozika",
   },
 ]
 
