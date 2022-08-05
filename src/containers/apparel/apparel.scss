@@ -36,6 +36,13 @@
             padding: 0;
         }
 
+        &--container:hover {
+           
+            border: $primary-color 12px solid;
+            transition: 0.5s;
+            
+        }
+
         &--left-top-corner {
             display: flex;
             align-items: flex-end;

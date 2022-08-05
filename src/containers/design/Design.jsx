@@ -22,7 +22,7 @@ const Design = () => {
       control.start("hidden");
     }
   }, [control, inView]);
-  
+
   const [imageDir, setImageDir] = React.useState("logo");
 
   const squares01 = [];
@@ -32,15 +32,16 @@ const Design = () => {
     if (i < 5) {
       squares01.push(
         <motion.div
-        // ref={ref}
-        //   animate={control}
-        //   variants={boxVariant}
-        //   transition={{ ease: "easeOut", duration: 1 }}
-        //   initial="hidden"
-        initial={{ opacity: 0, scale: 0 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ ease: "easeOut", duration: 1 }}
-        className="design__grid-item--container">
+          // ref={ref}
+          //   animate={control}
+          //   variants={boxVariant}
+          //   transition={{ ease: "easeOut", duration: 1 }}
+          //   initial="hidden"
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="design__grid-item--container"
+        >
           <img
             src={"./images/" + imageDir + "/000" + i + ".jpg"}
             alt="Image"
@@ -51,15 +52,16 @@ const Design = () => {
     } else {
       squares02.push(
         <motion.div
-        // ref={ref}
-        //   animate={control}
-        //   variants={boxVariant}
-        //   transition={{ ease: "easeOut", duration: 1 }}
-        //   initial="hidden"
-        initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ ease: "easeOut", duration: 1 }}
-        className="design__grid-item--container">
+          // ref={ref}
+          //   animate={control}
+          //   variants={boxVariant}
+          //   transition={{ ease: "easeOut", duration: 1 }}
+          //   initial="hidden"
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="design__grid-item--container"
+        >
           <img
             src={"./images/" + imageDir + "/000" + i + ".jpg"}
             alt="Image"
@@ -80,15 +82,52 @@ const Design = () => {
         />
       </div>
       <motion.div
-      initial={{ opacity: 0, y: -100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ ease: "easeOut", duration: 1.5 }}
-      className="design__grid-item--top">
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 1.5 }}
+        className="design__grid-item--top"
+      >
         <ul>
-          <li onClick={() => setImageDir("logo")} className={imageDir === "logo" ? "design__grid-bar--active" : "design__grid-bar"}>Лого</li>
-          <li onClick={() => setImageDir("poly")} className={imageDir === "poly" ? "design__grid-bar--active" : "design__grid-bar"}>Полиграфия</li>
-          <li onClick={() => setImageDir("pack")} className={imageDir === "pack" ? "design__grid-bar--active" : "design__grid-bar"}>Упаковка</li>
-          <li onClick={() => setImageDir("photo")} className={imageDir === "photo" ? "design__grid-bar--active" : "design__grid-bar"}>Фотография</li>
+          <li
+            onClick={() => setImageDir("logo")}
+            className={
+              imageDir === "logo"
+                ? "design__grid-bar--active"
+                : "design__grid-bar"
+            }
+          >
+            Лого
+          </li>
+          <li
+            onClick={() => setImageDir("poly")}
+            className={
+              imageDir === "poly"
+                ? "design__grid-bar--active"
+                : "design__grid-bar"
+            }
+          >
+            Полиграфия
+          </li>
+          <li
+            onClick={() => setImageDir("pack")}
+            className={
+              imageDir === "pack"
+                ? "design__grid-bar--active"
+                : "design__grid-bar"
+            }
+          >
+            Упаковка
+          </li>
+          <li
+            onClick={() => setImageDir("photo")}
+            className={
+              imageDir === "photo"
+                ? "design__grid-bar--active"
+                : "design__grid-bar"
+            }
+          >
+            Фотография
+          </li>
         </ul>
       </motion.div>
 
@@ -101,11 +140,11 @@ const Design = () => {
       </div>
 
       <div className="design__grid-item"></div>
-        {squares01}
+      {squares01}
       <div className="design__grid-item"></div>
 
       <div className="design__grid-item"></div>
-        {squares02}
+      {squares02}
       <div className="design__grid-item"></div>
 
       <div className="design__grid-item--left-bottom-corner">

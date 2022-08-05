@@ -36,7 +36,7 @@ const CodeCard = (props) => {
     
     className='code__grid-item--container'>
         {props.icon}
-          {/* <{CODE_DATA[0].icon} size={128} /> */}
+          
           <h1>{props.title}</h1>
           <p>{props.text}</p>
           
