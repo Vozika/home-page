@@ -11,24 +11,19 @@
     padding: 126px 0;
 
     & h1 {
-        // font-size: 4rem;
         margin: 0;
         padding: 0;
         opacity: 70%;
     }
 
     & h2 {
-        // font-size: 2.5rem;
         margin: 0;
         padding: 0;
         font-weight: 600;
     }
 
-
-
     &-item--center {
         display: flex;
-
     }
 
 }
@@ -39,7 +34,6 @@
     aspect-ratio: 1 / 1;
     border: 12px solid $light-color;
     margin-left: 126px;
-
 }
 
 @media only screen and (max-width: 1400px) {
@@ -70,7 +64,6 @@
             h2 {
                 font-size: 1.2rem;
             }
-
         }
     }
 
@@ -80,6 +73,5 @@
         aspect-ratio: 1 / 1;
         border: 6px solid $light-color;
         margin-left: 0px;
-
     }
 }

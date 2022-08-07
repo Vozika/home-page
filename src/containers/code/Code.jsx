@@ -1,18 +1,16 @@
-import React from 'react'
-import "./code.scss"
-import LeftTopCorner from "./images/left-top-corner.svg"
+import React from "react";
+import "./code.scss";
+import LeftTopCorner from "./images/left-top-corner.svg";
 import CodeCard from "../../components/codecard/CodeCard";
 
-import { GiModernCity } from 'react-icons/gi';
-import { GiWisdom } from 'react-icons/gi';
-import { GiTakeMyMoney } from 'react-icons/gi';
-import { RiPsychotherapyFill } from 'react-icons/ri';
-import { MdBathroom } from 'react-icons/md';
-import { MdOutlineBathtub } from 'react-icons/md';
-import { FaHome } from 'react-icons/fa';
-import { GiGearHammer } from 'react-icons/gi';
-
-
+import { GiModernCity } from "react-icons/gi";
+import { GiWisdom } from "react-icons/gi";
+import { GiTakeMyMoney } from "react-icons/gi";
+import { RiPsychotherapyFill } from "react-icons/ri";
+import { MdBathroom } from "react-icons/md";
+import { MdOutlineBathtub } from "react-icons/md";
+import { FaHome } from "react-icons/fa";
+import { GiGearHammer } from "react-icons/gi";
 
 const CODE_DATA = [
   {
@@ -79,55 +77,80 @@ const CODE_DATA = [
     link: "#code",
     github: "https://github.com/Vozika",
   },
-]
+];
 
 const Code = () => {
+  return (
+    <div className="code__grid" id="code">
+      <div className="code__grid-item--left-top-corner">
+        <img
+          src={LeftTopCorner}
+          className="code__image--left-top-corner"
+          alt=""
+        />
+      </div>
+      <div className="code__grid-item--top"></div>
 
-    return (
-    <div className='code__grid' id="code">
+      <div className="code__grid-item--right-top-corner">
+        <img
+          src={LeftTopCorner}
+          className="code__image--right-top-corner"
+          alt=""
+        />
+      </div>
 
-<div className='code__grid-item--left-top-corner'><img src={LeftTopCorner} className="code__image--left-top-corner" alt=""/></div>
-<div className='code__grid-item--top'>
+      <div className="code__grid-item"></div>
 
+      {CODE_DATA.slice(0, 4).map((data) => {
+        return (
+          <CodeCard
+            key={data.id}
+            icon={data.icon}
+            title={data.title}
+            text={data.text}
+            link={data.link}
+            github={data.github}
+          />
+        );
+      })}
 
+      <div className="code__grid-item"></div>
 
+      <div className="code__grid-item"></div>
+      {CODE_DATA.slice(-4).map((data) => {
+        return (
+          <CodeCard
+            key={data.id}
+            icon={data.icon}
+            title={data.title}
+            text={data.text}
+            link={data.link}
+            github={data.github}
+          />
+        );
+      })}
+      <div className="code__grid-item"></div>
 
-</div>
-
-<div className='code__grid-item--right-top-corner'><img src={LeftTopCorner} className="code__image--right-top-corner" alt=""/></div>
-
-        <div className='code__grid-item'></div>
-
-        {
-          CODE_DATA.slice(0, 4).map((data) => {
-            return (
-              <CodeCard key={data.id} icon={data.icon} title={data.title} text={data.text} link={data.link} github={data.github} />
-            )
-          })
-        }
-
-      
-        <div className='code__grid-item'></div>
-
-        <div className='code__grid-item'></div>
-        {
-          CODE_DATA.slice(-4).map((data) => {
-            return (
-              <CodeCard key={data.id} icon={data.icon} title={data.title} text={data.text} link={data.link} github={data.github} />
-            )
-          })
-        }
-        <div className='code__grid-item'></div>
-
-        <div className='code__grid-item--left-bottom-corner'><img src={LeftTopCorner} className="code__image--left-bottom-corner" alt=""/></div>
-        <div className='code__grid-item'></div>
-        <div className='code__grid-item'></div>
-        <div className='code__grid-item'></div>
-        <div className='code__grid-item'></div>
-        <div className='code__grid-item'><img src={LeftTopCorner} className="code__image--right-bottom-corner" alt=""/></div>
-
+      <div className="code__grid-item--left-bottom-corner">
+        <img
+          src={LeftTopCorner}
+          className="code__image--left-bottom-corner"
+          alt=""
+        />
+      </div>
+      <div className="code__grid-item"></div>
+      <div className="code__grid-item"></div>
+      <div className="code__grid-item"></div>
+      <div className="code__grid-item"></div>
+      <div className="code__grid-item">
+        <img
+          src={LeftTopCorner}
+          className="code__image--right-bottom-corner"
+          alt=""
+        />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Code
+export default Code;

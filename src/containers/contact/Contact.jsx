@@ -4,7 +4,7 @@ import "animate.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { GrLinkTop } from 'react-icons/gr';
+import { GrLinkTop } from "react-icons/gr";
 
 const Contact = () => {
   const control = useAnimation();
@@ -35,17 +35,20 @@ const Contact = () => {
     >
       <div className="contact__grid-item"></div>
       <div className="contact__grid-item--center">
-        <p>
-          Если вы хотите предложить мне работу, напишите письмо.
-          
-        </p>
+        <p>Если вы хотите предложить мне работу, напишите письмо.</p>
 
         <motion.h1
-        initial={{ opacity: 0, y: -100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ ease: "easeOut", duration: 2.5 }}
-        >metasoma@yandex.ru</motion.h1><br /><br />
-        <a href="#"><GrLinkTop size={64}/></a>
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 2.5 }}
+        >
+          metasoma@yandex.ru
+        </motion.h1>
+        <br />
+        <br />
+        <a href="#">
+          <GrLinkTop size={64} />
+        </a>
       </div>
       <div className="contact__grid-item"></div>
     </motion.div>

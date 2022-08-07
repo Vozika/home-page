@@ -7,7 +7,6 @@
     grid-template-rows: 162px repeat(2, 1fr) 162px;
     grid-column-gap: 1vw;
     grid-row-gap: 1.4vw;
-    // background-color: $primary-color;
     background-image: linear-gradient(180deg, $primary-color 0%, #8fd3f4 100%);
 
     &-navbar {
@@ -37,50 +36,37 @@
         }
 
         &--container:hover {
-           
             border: $primary-color 12px solid;
             transition: 0.5s;
-            
         }
 
         &--left-top-corner {
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
-
         }
 
         &--right-top-corner {
             display: flex;
             align-items: flex-end;
-            // justify-content: flex-end;
-
         }
 
         &--left-bottom-corner {
             display: flex;
             align-items: flex-start;
             justify-content: flex-end;
-
         }
 
         &--top {
-
             grid-column-start: 2;
             grid-column-end: 6;
             display: flex;
-            align-items:center;
+            align-items: center;
             justify-content: center;
             color: $light-color;
             padding-top: 1vw;
-
         }
-
-
-
-
     }
-
 }
 
 .apparel__image {
@@ -93,7 +79,6 @@
     &--right-top-corner {
         transform: rotate(90deg);
         width: 36px;
-
     }
 
     &--left-bottom-corner {
@@ -117,8 +102,6 @@
         height: fit-content;
         padding-bottom: 16px;
 
-   
-
         &-item {
 
             display: none;
@@ -136,36 +119,28 @@
 
             &--left-top-corner {
                 display: none;
-                
-    
             }
-    
+
             &--right-top-corner {
                 display: none;
-    
             }
-    
+
             &--left-bottom-corner {
                 display: none;
-    
             }
-    
+
             &--top {
-    
                 display: flex;
-                align-items:center;
+                align-items: center;
                 justify-content: center;
                 color: $light-color;
                 padding: 3.5em 0;
-                
-                
 
-                & p {
+                p {
                     font-size: 3vw;
                     text-align: center;
                     margin: 0 32px;
                 }
-    
             }
 
             &--bottom {
@@ -176,20 +151,20 @@
 
     .apparel__image {
         width: 90%;
-    
+
         &--left-top-corner {
             display: none;
         }
-    
+
         &--right-top-corner {
             display: none;
-    
         }
-    
+
         &--left-bottom-corner {
-            display: none;;
+            display: none;
+            ;
         }
-    
+
         &--right-bottom-corner {
             display: none;
         }

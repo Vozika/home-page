@@ -6,7 +6,7 @@
     grid-template-rows: 126px 1fr 126px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    }
+}
 
 .grid-item {
 
@@ -15,31 +15,26 @@
         align-items: center;
         justify-content: space-between;
     }
-
 }
 
 @media only screen and (max-width: 1400px) {
-  
+
 
     .header__grid {
         display: flex;
         flex-direction: column;
-        
-        
+    }
+
+    .grid-item {
+
+        display: none;
+
+        &__main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 10em;
         }
-
-        .grid-item {
-
-            display: none;
-
-            &__main {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-                margin-top: 10em;
-            }
-        
-        }
-
-  }
+    }
+}

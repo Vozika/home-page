@@ -4,7 +4,6 @@
 
 .code__grid {
     width: 100%;
-
     display: grid;
     grid-template-columns: 162px repeat(4, 1fr) 162px;
     grid-template-rows: 162px repeat(2, 1fr) 162px;
@@ -32,19 +31,15 @@
             border: $dark-color 12px solid;
             padding: 2.5em;
             font-size: 0.75vw;
-            
 
             p {
-
                 text-align: center;
             }
 
             h1 {
-
                 text-align: center;
                 margin-bottom: 0;
             }
-
 
         }
 
@@ -57,7 +52,6 @@
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
-
         }
 
         &--right-top-corner {
@@ -89,10 +83,7 @@
                 color: $dark-color;
             }
         }
-
-
     }
-
 }
 
 .code__image {
@@ -105,7 +96,6 @@
     &--right-top-corner {
         transform: rotate(90deg);
         width: 36px;
-
     }
 
     &--left-bottom-corner {
@@ -141,7 +131,7 @@
                 align-items: center;
                 justify-items: baseline;
             }
-    
+
             &--container {
                 background-color: $light-color;
                 display: flex;
@@ -151,72 +141,54 @@
                 border: $dark-color 6px solid;
                 padding: 1.5em;
                 font-size: 3vw;
-    
+
                 p {
-    
                     text-align: center;
                 }
-    
+
                 h1 {
-    
                     text-align: center;
                     margin-bottom: 0;
                 }
-    
-    
+
+
             }
-    
+
             &--left-top-corner {
                 display: none;
-               
-    
             }
-    
+
             &--right-top-corner {
                 display: none;
-               
-    
             }
-    
+
             &--left-bottom-corner {
                 display: none;
-                
-    
             }
-    
+
             &--top {
-    
-                
                 display: none;
-               
-    
-
             }
-    
-    
         }
-
     }
 
     .code__image {
-        
-    
+
+
         &--left-top-corner {
             display: none;
         }
-    
+
         &--right-top-corner {
             display: none;
-    
         }
-    
+
         &--left-bottom-corner {
             display: none;
         }
-    
+
         &--right-bottom-corner {
             display: none;
         }
     }
-
 }

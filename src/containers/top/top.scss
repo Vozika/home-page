@@ -16,7 +16,6 @@
     font-size: 3.8vw;
     text-align: center;
     font-family: 'Roboto Slab', serif;
-
   }
 
   h2 {
@@ -35,17 +34,12 @@
     background-size: 100% 12px;
     background-position: 0 88%;
     transition: background-size 0.25s ease-in, padding 0.25s ease-out;
-    // transition: padding 0.25s ease-in;
-
 
     &:hover {
       background-size: 100% 75%;
       padding: 0 6px;
       color: $light-color;
-
-
     }
-
   }
 
   &-item--center {
@@ -53,7 +47,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
   }
 }
 
@@ -67,9 +60,6 @@
   width: 100%;
   margin: 0;
   padding: 0;
-
-
-
 }
 
 .scroller>span {
@@ -80,9 +70,6 @@
   top: -4vw;
   animation: slide 30s infinite;
   font-weight: bold;
-  // text-shadow: 
-  // 8px 8px $primary-color,
-  // 20px 20px $dark-color;
 }
 
 @keyframes slide {
@@ -94,7 +81,6 @@
 
   15% {
     opacity: 50;
-
   }
 
   25% {
@@ -104,7 +90,6 @@
 
   35% {
     opacity: 100;
-
   }
 
   50% {
@@ -124,7 +109,7 @@
 @media only screen and (max-width: 1400px) {
 
   .top__grid {
-    
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -150,15 +135,6 @@
       a {
         font-size: 7vw;
       }
-
     }
-
   }
-
-
-
-
-
-
-
 }

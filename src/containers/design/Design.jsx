@@ -32,11 +32,6 @@ const Design = () => {
     if (i < 5) {
       squares01.push(
         <motion.div
-          // ref={ref}
-          //   animate={control}
-          //   variants={boxVariant}
-          //   transition={{ ease: "easeOut", duration: 1 }}
-          //   initial="hidden"
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ ease: "easeOut", duration: 1 }}
@@ -52,11 +47,6 @@ const Design = () => {
     } else {
       squares02.push(
         <motion.div
-          // ref={ref}
-          //   animate={control}
-          //   variants={boxVariant}
-          //   transition={{ ease: "easeOut", duration: 1 }}
-          //   initial="hidden"
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ ease: "easeOut", duration: 1 }}

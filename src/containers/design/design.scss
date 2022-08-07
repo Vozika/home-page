@@ -7,7 +7,6 @@
     grid-template-rows: 162px repeat(2, 1fr) 162px;
     grid-column-gap: 1vw;
     grid-row-gap: 1.4vw;
-    // background-color: $primary-color;
     background-image: linear-gradient(180deg, $primary-color 0%, #8fd3f4 100%);
 
     &-bar {
@@ -34,7 +33,6 @@
             justify-content: center;
             border: $dark-color 12px solid;
             padding: 0;
-            
         }
 
         &--container:hover {
@@ -47,28 +45,23 @@
             border: $primary-color 12px solid;
             padding: 0;
             transition: 0.5s;
-            
         }
 
         &--left-top-corner {
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
-
         }
 
         &--right-top-corner {
             display: flex;
             align-items: flex-end;
-            // justify-content: flex-end;
-
         }
 
         &--left-bottom-corner {
             display: flex;
             align-items: flex-start;
             justify-content: flex-end;
-
         }
 
         &--top {
@@ -78,14 +71,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
         }
-
-
-
-
     }
-
 }
 
 .design__image {
@@ -98,7 +85,6 @@
     &--right-top-corner {
         transform: rotate(90deg);
         width: 36px;
-
     }
 
     &--left-bottom-corner {
@@ -123,11 +109,9 @@
 
         &-bar {
             padding-top: 0vw;
-            
-    
+
             &--active {
                 padding-top: 0vw;
-                
             }
         }
 
@@ -148,24 +132,20 @@
 
             &--left-top-corner {
                 display: none;
-
-
             }
 
             &--right-top-corner {
                 display: none;
-
             }
 
             &--left-bottom-corner {
                 display: none;
-
             }
 
             &--top {
 
                 display: flex;
-                
+
                 align-items: center;
                 justify-content: center;
                 font-size: 1.2rem;
@@ -180,7 +160,6 @@
                 }
             }
         }
-
     }
 
     .design__image {
@@ -192,7 +171,6 @@
 
         &--right-top-corner {
             display: none;
-
         }
 
         &--left-bottom-corner {
@@ -204,4 +182,3 @@
         }
     }
 }
-
