@@ -71,11 +71,11 @@ const CODE_DATA = [
   },
   {
     id: 7,
-    icon: <GiGearHammer size={96} />,
-    title: "Coming Soon",
-    text: "Для будущего проекта. Пока его нет, но обязательно будет. А пока ещё раз посмотрите на уже сделанное.",
-    link: "#code",
-    github: "https://github.com/Vozika",
+    icon: <GiModernCity size={96} />,
+    title: "Capital Quiz App 2",
+    text: "Новый алгоритм, новый интерфейс. Добавлены новые опции. Material UI используется по-прежнему.",
+    link: "./newquiz",
+    github: "https://github.com/Vozika/new-quiz-app",
   },
 ];
 
